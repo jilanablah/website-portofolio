@@ -1,0 +1,329 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --primary: #041e44;
+  --secondary: #072852;
+  --tertiary: #1e4d85;
+  --title: linear-gradient(182.78deg, #ffbda0 2.32%, #ff6cd6 127.21%);
+  --dark: #333;
+  --light: #fff;
+  --card: rgba(165, 202, 255, 0.2);
+  --clickcard: linear-gradient(180deg, #ff7686 0%, #d72f93 100%);
+  --button: linear-gradient(90.55deg, #256bf4 -13.39%, #3ac1de 99.74%);
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0px;
+  color: var(--light);
+}
+
+/* aturan umum */
+.page-center {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* untuk tampilannya jadi ngeflex */
+.d-flex {
+  display: flex;
+}
+.flex-warp {
+  flex-wrap: wrap;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: auto;
+}
+
+.flex-item {
+  flex: 0 0 auto;
+}
+
+.align-center {
+  align-items: center;
+}
+/* code align :right */
+
+/* untuk text agar di tengah */
+.text-center {
+  text-align: center;
+}
+/* untuk me-justify content senter */
+.justify-center {
+  justify-content: center;
+}
+
+.justify-space-between {
+  justify-content: space-between;
+}
+
+/* untuk layout yang sama semua */
+.d-grid {
+  display: grid;
+}
+
+.grid-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+.gap-8 {
+  gap: 8px;
+}
+.gap-32 {
+  gap: 32px;
+}
+.gap-16 {
+  gap: 16px;
+}
+.gap-20 {
+  gap: 20px;
+}
+.gap-24 {
+  gap: 24px;
+}
+.gap-48 {
+  gap: 48px;
+}
+.gap-60 {
+  gap: 60px;
+}
+.navbar {
+  background-color: var(--primary);
+  padding: 40px 0;
+}
+
+.navbar-content img {
+  width: 50px;
+  height: 40px;
+}
+.text-white {
+  color: var(--light);
+}
+.text-title {
+  background-image: linear-gradient(182.78deg, #ffbda0 2.32%, #ff6cd6 127.21%);
+  background-clip: text;
+  color: transparent;
+}
+
+.text-ink {
+  color: var(--dark);
+}
+/* margin y: vertical yg auto */
+.my-auto {
+  margin: auto 0;
+}
+/* margin horizontal */
+.mx-auto {
+  margin: 0 auto;
+}
+/* style konten */
+.hero {
+  background-color: var(--primary);
+  padding: 0;
+}
+.experience,
+.skill,
+.footer {
+  background-color: var(--primary);
+  padding: 60px 0px;
+}
+.project,
+.contactus {
+  background-color: var(--secondary);
+  padding: 60px 0;
+}
+.menu a {
+  text-decoration: none;
+  transition: text-shadow 0.03s ease-in-out;
+}
+.menu a.n1:hover {
+  text-shadow: 0 0 20px rgba(255, 255, 255, 1); /* Efek cahaya saat hover */
+}
+.menu a.n2:hover {
+  text-shadow: 0 0 20px rgba(255, 255, 255, 1); /* Efek cahaya saat hover */
+}
+.menu a.n3:hover {
+  text-shadow: 0 0 20px rgba(255, 255, 255, 1); /* Efek cahaya saat hover */
+}
+.menu a.n4:hover {
+  text-shadow: 0 0 20px rgba(255, 255, 255, 1); /* Efek cahaya saat hover */
+}
+.grup-card {
+  width: auto;
+  height: 302px;
+  border-radius: 1rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 32px;
+}
+.card:hover {
+  cursor: pointer;
+  transform: scaleY(1.1);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  background-image: var(--clickcard);
+}
+.card-project {
+  width: 279px;
+  height: 359px;
+}
+
+.rectangle1 {
+  position: relative;
+  width: 279px;
+  height: 187px;
+  background-color: rgba(255, 255, 255, 0.1);
+  top: 24px;
+}
+.rectangle2 {
+  position: relative;
+  width: 279px;
+  height: 126px;
+  top: -211px;
+  background-color: var(--tertiary);
+}
+
+button.project {
+  width: 200px;
+  height: 44px;
+  padding: 10px 32px;
+  border-radius: 25px;
+  position: relative;
+  top: -234px;
+}
+
+button.connect {
+  width: 200px;
+  height: 44px;
+  padding: 10px 32px;
+  border-radius: 25px;
+  position: relative;
+}
+
+.skill-group,
+.connect-grup {
+  width: auto;
+  height: auto;
+}
+.myskill {
+  position: relative;
+  width: 190px;
+  height: 254px;
+  top: 56px;
+}
+.cardskill {
+  width: 190px;
+  height: 198px;
+  top: 56px;
+  background-color: var(--tertiary);
+}
+.img-skill {
+  width: 112px;
+  height: 112px;
+  position: relative;
+  top: -56px;
+}
+h1.num {
+  size: 2rem;
+  background-image: linear-gradient(90.55deg, #256bf4 -13.39%, #3ac1de 99.74%);
+  background-clip: text;
+  color: transparent;
+  position: relative;
+  top: -44px;
+}
+
+.connect-card {
+  padding: 24px 0px;
+  width: 260px;
+  height: 258px;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* media query for mobile device */
+@media (max-width: 768px) {
+  .hero-content {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+  }
+  .hero-right img {
+    width: 100%;
+    height: 100%;
+    border-radius: 360px;
+    border: none;
+    box-shadow: none;
+  }
+  .menu {
+    display: none;
+  }
+  .hero {
+    padding: 40px 0;
+  }
+  .btn {
+    background-image: var(--button);
+    padding: 10px, 32px, 10px, 32px;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--light);
+    border: none;
+    width: 100%;
+    height: 48px;
+    cursor: pointer;
+  }
+  .card {
+    width: 200px;
+    height: 224px;
+    border-radius: 12px;
+    background-color: var(--card);
+    padding: 24px;
+  }
+  .grup-card::-webkit-scrollbar {
+    display: none;
+  }
+}
+/* media query for deskop device */
+@media (min-width: 769px) {
+  .hero-right img {
+    width: 541px;
+    height: 556px;
+    border-radius: 360px;
+    border: none;
+    box-shadow: none;
+  }
+  p.experience-description,
+  p.project-description {
+    width: 40%;
+    margin: 0;
+  }
+  .btn {
+    background-image: var(--button);
+    padding: 10px, 32px, 10px, 32px;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--light);
+    border: none;
+    width: 200px;
+    height: 48px;
+    cursor: pointer;
+  }
+  .card {
+    width: 200px;
+    height: 224px;
+    border-radius: 12px;
+    background-color: var(--card);
+    padding: 24px;
+  }
+  .grup-card::-webkit-scrollbar {
+    display: none;
+  }
+}
