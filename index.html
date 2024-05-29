@@ -10,13 +10,18 @@
     <!-- navbar -->
     <nav class="navbar">
       <div class="page-center">
-        <div class="navbar-content d-flex justify-space-between">
-          <img src="assets/logo.png" alt="logo" loading="lazy" />
+        <div class="navbar-content d-flex justify-space-between text-center">
+          <img src="assets/logo.png" alt="" />
           <ul class="menu d-flex gap-60">
             <a class="n1 text-white" href="#">About</a>
             <a class="n2 text-white" href="#">Experience</a>
             <a class="n3 text-white" href="#">Project</a>
             <a class="n4 text-white" href="#">Contact</a>
+            <!-- Rounded switch -->
+            <label id="mode" class="switch">
+              <input id="mode-checkbox" type="checkbox" />
+              <span class="slider round"></span>
+            </label>
           </ul>
         </div>
       </div>
@@ -290,5 +295,12 @@
       </div>
     </div>
     <!-- end of footer -->
+    <script>
+      var modeCheckbox = document.getElementById("mode-checkbox");
+      console.log(modeCheckbox);
+      modeCheckbox.onclick = function () {
+        document.body.classList.toggle("dark-theme");
+      };
+    </script>
   </body>
 </html>
